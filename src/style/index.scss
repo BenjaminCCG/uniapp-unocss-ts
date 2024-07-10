@@ -1,0 +1,111 @@
+.test {
+  @apply mt-4 ml-4;
+
+  padding-top: 4px;
+  color: red;
+}
+
+$green: #ef233c;
+$red: #ee0a24;
+$warm-color: #faab0c;
+
+$text-small: 24rpx;
+$text-normal: 28rpx;
+$text-big: 32rpx;
+$number-small: 36rpx;
+$number-normal: 48rpx;
+$number-big: 64rpx;
+
+$text-title: #333;
+$text-color: #666;
+$subtext: #999;
+$text-hint: #ccc;
+
+$icon-color: #999;
+$icon-main: $green;
+
+$bg-normal: #f5f5f5;
+$diveder: #ebedf0;
+
+// .image-icon {
+//   display: inline-block;
+//   width: 4rem;
+//   height: 4rem;
+// }
+
+.page-content {
+  background-color: rgb(245 245 245 / 100%);
+}
+
+:deep(.is-primary) {
+  background: $green !important;
+}
+
+:deep(.is-info) {
+  background: white !important;
+}
+
+:deep(.wd-tabs__line) {
+  background-color: $green !important;
+}
+:deep(.wd-cell-group__body) {
+  .wd-input__label-inner {
+    color: #666666;
+  }
+  .uni-input-wrapper,
+  .wd-input__error-message {
+    text-align: right;
+  }
+}
+
+:deep(.wd-card__footer) {
+  display: none !important;
+}
+
+:deep(.wd-picker__value) {
+  text-align: right !important;
+}
+:deep(.wd-textarea__value) {
+  padding-right: 0 !important;
+  text-align: right !important;
+}
+
+.delete-btn {
+  color: $red;
+}
+
+.text-btn {
+  font-size: small;
+  color: $subtext;
+}
+
+.title {
+  font-size: $text-big;
+  font-weight: 600;
+  color: $text-title;
+}
+
+.sub-title {
+  font-size: $text-normal;
+  color: $subtext;
+}
+
+.theme-color {
+  color: $green;
+}
+
+.border-bottom {
+  border-bottom: 1px solid $diveder;
+}
+
+.bottom-box {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem;
+  font-size: $text-normal;
+  color: $text-color;
+  text-align: center;
+  background-color: #fff;
+}
